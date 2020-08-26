@@ -23,8 +23,18 @@ def login(user='admin', password='admin'):
 
     return response.json()
 
+def hello():
+    url_hello = be_url.format("api/hello/")
+
+    response = requests.get(url_hello, headers=header)
+    
+    print(response.json())
 
 if __name__ == '__main__':
-    credentials = login()
+    tokens = login()
     
-    print(credentials)
+    set_header(tokens['access'])
+    
+    print(header)
+    
+    hello()
