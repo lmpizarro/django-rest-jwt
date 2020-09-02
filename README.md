@@ -42,3 +42,5 @@ and device_id = 'weather-pro-000000'
 ORDER BY 1
 
 ```` 
+
+[logging](https://www.scalyr.com/blog/getting-started-quickly-django-logging)
