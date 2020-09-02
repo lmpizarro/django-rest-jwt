@@ -2,3 +2,10 @@ Django==3.1
 djangorestframework==3.11.1
 djangorestframework-simplejwt==4.4.0
 requests
+drf-yasg
+gunicorn
+whitenoise
+celery[redis]
+django-prometheus
+jinja2
+whitenoise
