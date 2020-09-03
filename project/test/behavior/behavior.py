@@ -19,7 +19,11 @@ def create(user='lmpizarro', password='pepe', email='pepe@pepe.com'):
 
     response = requests.post(url, headers=headers, data=payload)
 
-    return response.json()
+    if response.status_code == 201:
+        print('201', response.json())
+    else:
+        print('400', response.json())
+        return('error')
 
 if __name__ == '__main__':
 
